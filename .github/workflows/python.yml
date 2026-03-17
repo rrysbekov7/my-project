@@ -1,6 +1,8 @@
 name: Run Python script
 
-on: [push]
+on: 
+  schedule:
+    - cron: '* * * * *'
 
 jobs:
   run-script:
